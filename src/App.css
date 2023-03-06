@@ -3,8 +3,16 @@
   flex-direction: column;
   align-items: center;
 }
-.task-center{
+.task-create{
   width: 450px;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-top: 20px;
+  
+}
+.task-update {
+  width: 100%;
 }
 .task-form {
   display: flex;
@@ -26,7 +34,57 @@
   background-color: green;
   color: white;
   border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 .btn-create:hover {
   background-color: grey;
 }
+.btn-update {
+  background-color: blueviolet;
+}
+
+.task-show {
+  border: 1px solid bisque;
+  border-radius: 30px;
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+.task-title {
+  margin-bottom: 5px;
+}
+
+.btn-delete {
+  padding: 5px;
+  font-size: 15px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn-edit {
+  padding: 5px;
+  font-size: 15px;
+  width: 70px;
+  border: none;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
