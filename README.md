@@ -1,5 +1,21 @@
-# Getting Started with Create React App
+Öncelikle Axios'u kurmamız gerekiyor bunun içinse komut istemine veya editörünüzün terminaline aşağıdaki isteği yollamanız gerekiyor.
 
+### `npm install axios`
+
+*Axios bizlere bir çok kolaylık sağlıyor. Verilerimizin güncellenmesi,silinmesi,gönderilmesi ve çekilmesi gibi bir çok kolaylıklar sağlıyor. Bunları yaparken kısa komutlarla yapabilirsiniz. Eğer axios ile daha önce çok fazla veri çekme işlemleri yapmadıysanız sizlere tavsiyem bazı methodları yaparken urlde değişiklikler yapmanız gerekiyor bunun içinse lütfen vereceğim siteyi dikkatlice kontrol ediniz. Bu istekleri yapabilmek için lütfen bu siteyi inceleyiniz ; [Axios](https://axios-http.com/docs/intro)*
+
+
+## *Daha sonra verilerimizin tutulacağı json dosyamıza ihtiyacımız var. Bunun için api adında bir klasör açıp içerisinede db.json dosyasını kaydettim. Daha sonra aşağıdaki istekleri terminalimde çalıştırarak json dosyasını 3004 portunda açtım. Şuna dikkat çekmek istiyorum. Eğer react projeniz 3000 portunda çalışıyorsa, json dosyanızı 3000 portunda açmamaya özen gösteriniz. Yoksa json dosyasınız 3000 portunda açıldığında react projenizin portu kapanacaktır.*
+
+### `npm install -g json-server` and `json-server --watch api/db.json --port 3004`
+
+## *`useEffect` and `useState`*
+
+![Ekran Görüntüsü (102)](https://user-images.githubusercontent.com/100241189/223713645-140b6139-79e9-42f1-ac51-6ce5f1e8da55.png)
+
+
+
+##
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
