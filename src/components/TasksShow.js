@@ -1,18 +1,25 @@
 import { useState } from "react";
 import TaskCreate from "./TaskCreate";
 
-function TaskShow({ task, onDelete }) {
+function TaskShow({ task, onDelete, onUpdate }) {
   const [showEdit, setShowEdit] = useState(false);
+
   const handleDeleteClick = () => {
     onDelete(task.id);
   };
+
   const handleEditClick = () => {
     setShowEdit(!showEdit);
+  };
+
+  const handleSubmit = (id, updatedTitle, updatedTaskDesc) => {
+    setShowEdit(false);
+    onUpdate(id, updatedTitle, updatedTaskDesc);
   };
   return (
     <div className="task-show">
       {showEdit ? (
-        <TaskCreate task={task} taksFormUpdate={true} />
+        <TaskCreate task={task} taksFormUpdate={true} onUpdate={handleSubmit} />
       ) : (
         <div>
           {" "}
